@@ -1,0 +1,11 @@
+Hi {!Job_Posting__c.CreatedBy}
+
+Job Posting Number:  {!Job_Posting__c.Name}
+
+Last Modified By     :   {!Job_Posting__c.LastModifiedBy}
+
+Job Posting Site    :    {!Job_Posting__c.Job_Posting_Site__c}
+
+Position                 :    {!Job_Posting__c.Position__c}
+
+For More Information visit :{!Job_Posting__c.Link}

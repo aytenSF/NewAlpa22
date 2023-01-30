@@ -1,0 +1,16 @@
+Hi {!Job_Posting_Site__c.OwnerFirstName}}
+
+Job Posting Number :   {!Job_Posting__c.Name}
+
+
+Job Posting Site  Description  :    
+
+{!Job_Posting__c.Job_Posting_Site_Description__c}
+
+
+Position   Description              :  
+
+  {!Job_Posting__c.Position_Description__c}
+
+
+For More Information visit :{!Job_Posting__c.Link}

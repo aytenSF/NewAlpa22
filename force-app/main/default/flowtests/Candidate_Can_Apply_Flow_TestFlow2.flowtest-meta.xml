@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowTest xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flowApiName>Candidate_Can_Apply_Flow</flowApiName>
+    <label>TestFlow2</label>
+    <testPoints>
+        <elementApiName>Start</elementApiName>
+        <parameters>
+            <leftValueReference>$Record</leftValueReference>
+            <type>InputTriggeringRecordInitial</type>
+            <value>
+                <sobjectValue>{&quot;Age__c&quot;:&quot;42&quot;,&quot;Batch_Load_Item__c&quot;:false,&quot;Can_Apply__c&quot;:&quot;Health Sales - Hiring For Open Enrollment,Associate Engineer, Design,&quot;,&quot;Date_of_Birth__c&quot;:&quot;1980-11-02&quot;,&quot;Name&quot;:&quot;Mary Deep&quot;,&quot;OwnerId&quot;:&quot;0053t000009HarZAAS&quot;,&quot;State_Province__c&quot;:&quot;FL&quot;,&quot;Total_Year_of_Experience__c&quot;:20,&quot;Zip_Postal_Code__c&quot;:&quot;33449&quot;}</sobjectValue>
+            </value>
+        </parameters>
+        <parameters>
+            <leftValueReference>$Record</leftValueReference>
+            <type>InputTriggeringRecordUpdated</type>
+            <value>
+                <sobjectValue>{&quot;Age__c&quot;:&quot;42&quot;,&quot;Batch_Load_Item__c&quot;:false,&quot;Can_Apply__c&quot;:&quot;Health Sales - Hiring For Open Enrollment,Associate Engineer, Design,&quot;,&quot;Date_of_Birth__c&quot;:&quot;1980-11-02&quot;,&quot;Name&quot;:&quot;Mary Deep&quot;,&quot;OwnerId&quot;:&quot;0053t000009HarZAAS&quot;,&quot;State_Province__c&quot;:&quot;FL&quot;,&quot;Total_Year_of_Experience__c&quot;:20,&quot;Zip_Postal_Code__c&quot;:&quot;33449&quot;}</sobjectValue>
+            </value>
+        </parameters>
+    </testPoints>
+    <testPoints>
+        <assertions>
+            <conditions>
+                <leftValueReference>$Record.Can_Apply__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Design</stringValue>
+                </rightValue>
+            </conditions>
+        </assertions>
+        <elementApiName>Finish</elementApiName>
+    </testPoints>
+</FlowTest>

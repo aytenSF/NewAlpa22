@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Email_Notification__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>f the checkbox is Checked.
+It will send the email to owner regarding Job Posting Site and All the “Job Posting” and “Position” related to it daily.</description>
+    <externalId>false</externalId>
+    <label>Send Email Notification</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

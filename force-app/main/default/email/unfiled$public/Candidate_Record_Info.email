@@ -1,0 +1,11 @@
+Hello
+
+A new Candidate is created.
+
+
+Candidate Name = {!Candidate__c.Name}
+Created By          = {!Candidate__c.CreatedBy}
+Candidate Email  ={!Candidate__c.Email__c}
+Candidate Phone Number={!Candidate__c.Phone__c}
+
+For more information  {!Candidate__c.Link}
